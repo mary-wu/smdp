@@ -1,7 +1,27 @@
 # Semi-Markov Offline RL 
-
 This codebase stores the code for a series of experiments to: 1) compare MDP- vs SMDP-based algorithms in a customized Minigrid 8x8 environment; and, 2) compare three SMDP-based algorithms in an offline learning environment.  
 
+## Paper 
+This repository contains the code for creating Semi-Markov RL algorithms, which are explained and presented in the paper "Semi-Markov Offline RL" published in  Proceedings of Machine Learning Research (PMLR) for The Conference on Health, Inference, and Learning (CHIL) 2022. If you use this code in your research please cite the following publication:
+
+    @InProceedings{pmlr-v174-fatemi22a,
+        title = {Semi-Markov Offline Reinforcement Learning for Healthcare},
+        author = {Fatemi, Mehdi and Wu, Mary and Petch, Jeremy and Nelson, Walter and Connolly, Stuart J and Benz, Alexander and Carnicelli, Anthony and Ghassemi, Marzyeh},
+        booktitle = {Proceedings of the Conference on Health, Inference, and Learning},
+        pages = {119--137},
+        year = {2022},
+        editor = {Flores, Gerardo and Chen, George H and Pollard, Tom and Ho, Joyce C and Naumann, Tristan},
+        volume = {174},
+        series = {Proceedings of Machine Learning Research},
+        month = {07--08 Apr},
+        publisher = {PMLR}
+    }
+
+This paper can also be found on arXiv at 2203.09365.
+
+
+
+## Setup 
 This codebase uses wandb. To set up wandb, please see https://docs.wandb.ai/quickstart for details. To use wandb for the experiments, update the "wandb_key" parameter in the config_minigrid.yaml file. 
 
 ## Online Experiments
