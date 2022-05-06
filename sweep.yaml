@@ -1,0 +1,11 @@
+program: train.py
+method: grid
+parameters:
+  network_size:
+    values: [ "bcq_fc", "dqn_fc"]
+  sq_learning:
+    values: [0, 1]
+  ddqn:
+    values: [0, 1]
+  random_seed:
+    values: [0,1,2,3,4]

@@ -1,0 +1,11 @@
+#model_name: dqn_fc0
+model_name: bcq_fc0
+replay_max_size: 1000
+suffix: train
+rand_action_p: 0.25
+2nd_action_p: 0.5
+smdp_returns: true
+max_episode_steps: 50
+rand_init: 0
+random_seed: 3
+

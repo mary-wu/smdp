@@ -1,0 +1,44 @@
+device: cpu
+folder_location: models\
+test_data_folder: buffers\test_states
+is_learning: true
+is_testing: true
+writing_period: 1
+printing_period: 10
+saving_period: 200
+num_experiments: 1
+test: false
+rendering: false
+
+# learning-related
+learning_frequency: 1
+learning_rate: 0.001
+minibatch_size: 32
+random_seed: 11
+update_freq: 1000
+normalize: 5
+num_epochs: 201
+episode_max_len: 10
+episodes_per_epoch: 50
+episodes_per_test: 10
+replay_max_size: 100
+replay_min_size: 1000
+
+# env-related
+gamma: 0.95
+option_env: true
+sq_learning: true
+
+# online-specific
+online_ql: false
+annealing: true
+annealing_start: 5000
+annealing_steps: 1000
+epsilon: 1
+final_epsilon: 0.1
+test_epsilon: 0.0
+
+# model-specific
+bcq_threshold: 0.3
+ddqn: true
+network_size: dqn_fc
